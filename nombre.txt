@@ -1,0 +1,65 @@
+package clase;
+import java.util.Scanner;
+
+public class classss {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		
+    // Este programa suma dos numeros
+		System.out.print("**Bienvenido a la Calculadora**\n");
+		
+		double x,y,z;
+		int Opcion; 
+		
+		
+		System.out.print("Ingrese 1 si queires sumar\n");
+		System.out.print("Ingrese 2 si queires restar\n");
+		System.out.print("Ingrese 3 si queires multiplicar\n");
+		System.out.print("Ingrese 4 si queires dividir\n");
+		
+		System.out.print("Escribe una opcion");
+		Opcion = input.nextInt();
+		
+		switch (Opcion) {
+		case 1:
+			System.out.print("Ingrese primer numero a sumar");
+			x= input.nextDouble();
+			System.out.print("Ingrese segundo numero a sumar");
+			y= input.nextDouble();
+			z=x+y;
+			System.out.print("El resultado es:"+z);
+			break;
+			
+		case 2:
+			System.out.print("Ingrese primer numero a restar");
+			x= input.nextDouble();
+			System.out.print("Ingrese segundo numero a restar");
+			y= input.nextDouble();
+			z=x-y;
+			System.out.print("El resultado es:"+z);
+			break;
+			
+		case 3:
+			System.out.print("Ingrese primer numero a multiplicar");
+			x= input.nextDouble();
+			System.out.print("Ingrese segundo numero a multiplicar");
+			y= input.nextDouble();
+			z=x*y;
+			System.out.print("El resultado es:"+z);
+			break;
+			
+			
+		case 4:
+			System.out.print("Ingrese primer numero a dividir");
+			x= input.nextDouble();
+			System.out.print("Ingrese segundo numero a dividir");
+			y= input.nextDouble();
+			z=x/y;
+			System.out.print("El resultado es:"+z);
+			break;
+		}
+	}
+
+}
